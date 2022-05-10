@@ -1,0 +1,8 @@
+#7 write a prgoram to findout whether given year is milinium year or not.
+
+year = int(input("enter digit year"))
+reminder = year%1000
+if reminder==0:
+    print("given year is milinium year")
+else: 
+    print("given year is not milinium year")
