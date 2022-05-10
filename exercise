@@ -6,3 +6,14 @@ if reminder==0:
     print("given year is milinium year")
 else: 
     print("given year is not milinium year")
+
+'''
+8) write a program to accept user body temperature in farenheit and if is is above 100.2 then 
+display message you have high grade fever
+
+'''
+temperature=float(input("enter body temperature "))
+if temperature>=100.2:
+    print("you have high grade fever")
+else:
+    print("body temperature in farenheit")
