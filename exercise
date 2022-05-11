@@ -1,3 +1,20 @@
+'''
+4) write a program to accept one letter from user. if letter is a then print message "it is first letter of abcd".
+'''
+value = input("enter letter ")
+
+if value=='a':
+    print('it is first letter of abcd')
+elif value=='b':
+    print('it is second letter of abcd')
+elif value=='c':
+    print('it is third letter of abcd')
+elif value=='d':
+    print('it is fourth letter of abcd')
+else:
+    print('letter of abcd')
+    
+    
 #7 write a prgoram to findout whether given year is milinium year or not.
 
 year = int(input("enter digit year"))
