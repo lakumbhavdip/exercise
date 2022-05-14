@@ -15,6 +15,7 @@ else:
     print('letter of abcd')
     
     
+------------------------------------------------------------------------------------
 #7 write a prgoram to findout whether given year is milinium year or not.
 
 year = int(input("enter digit year"))
@@ -24,6 +25,8 @@ if reminder==0:
 else: 
     print("given year is not milinium year")
 
+
+------------------------------------------------------------------------------------
 '''
 8) write a program to accept user body temperature in farenheit and if is is above 100.2 then 
 display message you have high grade fever
@@ -35,7 +38,7 @@ if temperature>=100.2:
 else:
     print("body temperature in farenheit")
 
-
+------------------------------------------------------------------------------------
 
 '''
 10) Write a Python program to calculate final electricity bill based upon below given criteria. 
@@ -61,3 +64,19 @@ elif unit>300 and unit<400:
     print("billrate=",unit*1+unit/5)
 elif unit>400:
     print("billrate=",unit*1+unit/5)
+------------------------------------------------------------------------------------
+
+'''
+
+12) Write a program to display zodiac symbol & given zodiac sign from given birth day
+and month as per following criteria.
+
+'''
+birthday = int(input("enter bithdate"))
+birtmonth = int(input("enterbirthmonth"))
+
+    if (birthday >=21 and birtmonth ==3) or (birthday<=19 and birtmonth==4):
+        print("zodiac sign is 'aries' and zodiac symbol is 'the ram' ")
+    
+    if (birthday >=20 and birtmonth ==4) or (birthday<=20 and birtmonth==5):
+        print("zodiac sign is 'taurus' and zodiac symbol is 'the bull' ")
