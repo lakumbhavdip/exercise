@@ -70,13 +70,49 @@ elif unit>400:
 
 12) Write a program to display zodiac symbol & given zodiac sign from given birth day
 and month as per following criteria.
+   
+       
+Zodiac Sign                     Dates of Birth              Symbol 
+                            
+Aries                       March 21st - April 19th         The Ram
+Taurus                      April 20th - May 20th           The Bull 
+Gemini                      May 21st - June 20th            The Twins
+Cancer                      June 21st - July 22nd           The Crab
+Leo                         July 23rd - August 22nd         The Lion
+Virgo                       August 23rd - September22nd     The Virgin
+Libra                       September 23rd - October 22nd   The Scales
+Scorpio                     October 23rd – November 21st    The Scorpion
+Sagittarius                 November 22nd – December 21st   The Archer 
+Capricorn                   December 22nd - January 19th    The Goat 
+Aquarius                    January 20th - February 18th    The Water Bearer
+Pisces                      February 19th - March 20th      The Fishes
 
 '''
-birthday = int(input("enter bithdate"))
-birtmonth = int(input("enterbirthmonth"))
 
-    if (birthday >=21 and birtmonth ==3) or (birthday<=19 and birtmonth==4):
-        print("zodiac sign is 'aries' and zodiac symbol is 'the ram' ")
-    
-    if (birthday >=20 and birtmonth ==4) or (birthday<=20 and birtmonth==5):
-        print("zodiac sign is 'taurus' and zodiac symbol is 'the bull' ")
+birthdate= int(input("enter birthdate "))
+birthmonth= int(input("enter birthmonth "))
+
+if(birthdate>=21 and birth==3) or (birthdate<=19 and birthmonth==4):
+    print("Zodiac Sign is 'Aries'and Zodiac Symbol is 'the ram'")
+if(birthdate>=20 and birth==4) or (birthdate<=20 and birthmonth==5):
+    print("Zodiac Sign is 'Taurus'and Zodiac Symbol is 'the bull'")
+if(birthdate>=21 and birth==5) or (birthdate<=20 and birthmonth==6):
+    print("Zodiac Sign is 'Gemini'and Zodiac Symbol is 'the Twins'")
+if(birthdate>=21 and birth==6) or (birthdate<=22 and birthmonth==7):
+    print("Zodiac Sign is 'Cancer'and Zodiac Symbol is 'the Crab'")    
+if(birthdate>=23 and birth==7) or (birthdate<=22 and birthmonth==8):
+    print("Zodiac Sign is 'Leo' Zodiac Symbol is 'the Lion'")
+if(birthdate>=23 and birth==8) or (birthdate<=22 and birthmonth==9):
+    print("Zodiac Sign is 'Virgo'and Zodiac Symbol is 'the Virgin'")
+if(birthdate>=23 and birth==9) or (birthdate<=22 and birthmonth==10):
+    print("Zodiac Sign is 'Libra'and Zodiac Symbol is 'the Scales'")
+if(birthdate>=23 and birth==10) or (birthdate<=21 and birthmonth==11):
+    print("Zodiac Sign is 'Scorpio'and Zodiac Symbol is 'the Scorpion'")    
+if(birthdate>=22 and birth==11) or (birthdate<=21 and birthmonth==12):
+    print("Zodiac Sign is 'Sagittarius'and Zodiac Symbol is 'the Archer'")
+if(birthdate>=22 and birth==12) or (birthdate<=19 and birthmonth==1):
+    print("Zodiac Sign is 'Capricorn'and Zodiac Symbol is 'the Goat'")
+if(birthdate>=20 and birth==1) or (birthdate<=18 and birthmonth==2):
+    print("Zodiac Sign is 'Aquarius'and Zodiac Symbol is 'the Water Bearer'")
+if(birthdate>=19 and birth==2) or (birthdate<=20 and birthmonth==3):
+    print("Zodiac Sign is 'Pisces'and Zodiac Symbol is 'the Fishes'")    
