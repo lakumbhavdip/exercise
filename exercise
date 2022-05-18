@@ -116,3 +116,16 @@ if(birthdate>=20 and birth==1) or (birthdate<=18 and birthmonth==2):
     print("Zodiac Sign is 'Aquarius'and Zodiac Symbol is 'the Water Bearer'")
 if(birthdate>=19 and birth==2) or (birthdate<=20 and birthmonth==3):
     print("Zodiac Sign is 'Pisces'and Zodiac Symbol is 'the Fishes'")    
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+'''
+write a program to print following pattern 
+1 8 27 64 .... 10000
+
+'''
+count=1
+while count<=1000
+    print(count*count*count,end=' ')
+    count = count+1
