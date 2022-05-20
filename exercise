@@ -1,6 +1,61 @@
-'''
-4) write a program to accept one letter from user. if letter is a then print message "it is first letter of abcd".
-'''
+ex1
+# write a program to accept age from user in years. display message "you are eligible for voting" if age is above or equal to 18
+
+number = int(input("check age for voting "))
+
+if number>=18:
+    print("you are eligible for voting")
+
+else:
+    print("you are not eligible")
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex2
+# write a program to accept age from user in years. display message "you are eligible for voting" if age is above or equal to 18
+
+number = int(input("check age for voting "))
+
+if number>=18:
+    print("you are eligible for voting")
+
+else:
+    print("you are not eligible")
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex3
+#write a program to accept month number from user. display message "this month has 28 or 29 days" if month if february
+number =int(input("enter month number "))
+
+if number>0 and number<=12:
+    if number==1:
+        print("january",end=' ')
+    elif number==2:
+        print("february",end=' ')
+        print("this month has 28 or 29 days")
+    elif number==3:
+        print("march",end=' ')
+    elif number==4:
+        print("april",end=' ')
+    elif number==5:
+        print("may",end=' ')
+    elif number==6:
+        print("june",end=' ')
+    elif number==7:
+        print("july",end=' ')
+    elif number==8:
+        print("august",end=' ')
+    elif number==9:
+        print("september",end=' ')
+    elif number==10:
+            print("october",end=' ')
+    elif number==11:
+            print("navember",end=' ')
+    elif number==12:
+            print("dicember",end=' ')
+    else:
+        print("invalid number")
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex4
+#write a program to accept one letter from user. if letter is a then print message "it is first letter of abcd".
+
 value = input("enter letter ")
 
 if value=='a':
@@ -13,9 +68,30 @@ elif value=='d':
     print('it is fourth letter of abcd')
 else:
     print('letter of abcd')
-    
-    
-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex5
+#write a program to findout whether given number is odd or even
+number = int(input("enter number "))
+reminder=number%2
+if reminder==0:
+    print("enter number is even number")
+else:
+    print("enter number is odd number")
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex6
+#write a program to findout whether given letter is digit or not.
+
+value =(input("enter a rendom value"))
+
+if((value >= 'a' and value<= 'z') or (value>= 'A' and value<= 'Z')): 
+   print("The Given Character is an Alphabet ", value)
+elif(value>= '0' and value<= '9'):
+     print("The Given Character is a digit", value)
+else:
+    print("The Given Character is Not an Alphabet or a digit", value)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex7
 #7 write a prgoram to findout whether given year is milinium year or not.
 
 year = int(input("enter digit year"))
@@ -25,21 +101,37 @@ if reminder==0:
 else: 
     print("given year is not milinium year")
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex8
+#write a program to accept user body temperature in farenheit and if is is above 100.2 then display message you have high grade fever
 
-------------------------------------------------------------------------------------
-'''
-8) write a program to accept user body temperature in farenheit and if is is above 100.2 then 
-display message you have high grade fever
+number = float(input("enter body temprature"))
 
-'''
-temperature=float(input("enter body temperature "))
-if temperature>=100.2:
-    print("you have high grade fever")
+if number>=100.2:
+    print("you have high grade fever",)
+    
 else:
-    print("body temperature in farenheit")
+    print("you have law grade fever")
 
-------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex9
 
+'''
+9) write a program to accept RBS(Running Blood sugar) from user and then print message you have high blood sugar
+ if RBS is above normal level (use help from internet)
+'''
+
+RBS = int(input("enter your rbs "))
+
+if RBS>120:
+    print("your blood sugar is high")
+elif RBS>=70 and RBS<=120:
+    print("your blood sugar is normal ")
+elif RBS<70:
+     print("your blood sugar is law")    
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex10
 '''
 10) Write a Python program to calculate final electricity bill based upon below given criteria. 
 take monthly electricity unit from user as input. 
@@ -64,7 +156,48 @@ elif unit>300 and unit<400:
     print("billrate=",unit*1+unit/5)
 elif unit>400:
     print("billrate=",unit*1+unit/5)
-------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex11
+
+'''
+11) Write a Python program to calculate income tax, gross income, net income from monthly income given by user 
+
+yearly income     tax rate
+<3,00,000         5%  
+
+>=3,00,000
+<5,00,000         10%  
+
+>=5,00,000
+<8,00,000         20%
+
+>=8,00,000        30%  
+
+    
+'''
+monthly_income = int(input("enter your monthly income "))
+gross_income = monthly_income*12
+print("your gross income is ", gross_income)
+if gross_income<300000:
+    tax_rate=(gross_income*5)/100
+    print("your tax rate",tax_rate)
+
+elif gross_income>=300000 and gross_income<500000:
+    tax_rate=(gross_income*5)/100
+    print("your tax rate",tax_rate)
+
+elif gross_income>=500000 and gross_income<800000:
+    tax_rate=(gross_income*5)/100
+    print("your tax rate",tax_rate)
+
+elif gross_income>=500000:
+    tax_rate=(gross_income*5)/100
+    print("your tac rate",tax_rate)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex12
 
 '''
 
@@ -92,33 +225,39 @@ Pisces                      February 19th - March 20th      The Fishes
 birthdate= int(input("enter birthdate "))
 birthmonth= int(input("enter birthmonth "))
 
-if(birthdate>=21 and birth==3) or (birthdate<=19 and birthmonth==4):
+if(birthdate>=21 and birthmonth==3) or (birthdate<=19 and birthmonth==4):
     print("Zodiac Sign is 'Aries'and Zodiac Symbol is 'the ram'")
-if(birthdate>=20 and birth==4) or (birthdate<=20 and birthmonth==5):
+if(birthdate>=20 and birthmonth==4) or (birthdate<=20 and birthmonth==5):
     print("Zodiac Sign is 'Taurus'and Zodiac Symbol is 'the bull'")
-if(birthdate>=21 and birth==5) or (birthdate<=20 and birthmonth==6):
+if(birthdate>=21 and birthmonth==5) or (birthdate<=20 and birthmonth==6):
     print("Zodiac Sign is 'Gemini'and Zodiac Symbol is 'the Twins'")
-if(birthdate>=21 and birth==6) or (birthdate<=22 and birthmonth==7):
+if(birthdate>=21 and birthmonth==6) or (birthdate<=22 and birthmonth==7):
     print("Zodiac Sign is 'Cancer'and Zodiac Symbol is 'the Crab'")    
-if(birthdate>=23 and birth==7) or (birthdate<=22 and birthmonth==8):
+if(birthdate>=23 and birthmonth==7) or (birthdate<=22 and birthmonth==8):
     print("Zodiac Sign is 'Leo' Zodiac Symbol is 'the Lion'")
-if(birthdate>=23 and birth==8) or (birthdate<=22 and birthmonth==9):
+if(birthdate>=23 and birthmonth==8) or (birthdate<=22 and birthmonth==9):
     print("Zodiac Sign is 'Virgo'and Zodiac Symbol is 'the Virgin'")
-if(birthdate>=23 and birth==9) or (birthdate<=22 and birthmonth==10):
+if(birthdate>=23 and birthmonth==9) or (birthdate<=22 and birthmonth==10):
     print("Zodiac Sign is 'Libra'and Zodiac Symbol is 'the Scales'")
-if(birthdate>=23 and birth==10) or (birthdate<=21 and birthmonth==11):
+if(birthdate>=23 and birthmonth==10) or (birthdate<=21 and birthmonth==11):
     print("Zodiac Sign is 'Scorpio'and Zodiac Symbol is 'the Scorpion'")    
-if(birthdate>=22 and birth==11) or (birthdate<=21 and birthmonth==12):
+if(birthdate>=22 and birthmonth==11) or (birthdate<=21 and birthmonth==12):
     print("Zodiac Sign is 'Sagittarius'and Zodiac Symbol is 'the Archer'")
-if(birthdate>=22 and birth==12) or (birthdate<=19 and birthmonth==1):
+if(birthdate>=22 and birthmonth==12) or (birthdate<=19 and birthmonth==1):
     print("Zodiac Sign is 'Capricorn'and Zodiac Symbol is 'the Goat'")
-if(birthdate>=20 and birth==1) or (birthdate<=18 and birthmonth==2):
+if(birthdate>=20 and birthmonth==1) or (birthdate<=18 and birthmonth==2):
     print("Zodiac Sign is 'Aquarius'and Zodiac Symbol is 'the Water Bearer'")
-if(birthdate>=19 and birth==2) or (birthdate<=20 and birthmonth==3):
+if(birthdate>=19 and birthmonth==2) or (birthdate<=20 and birthmonth==3):
     print("Zodiac Sign is 'Pisces'and Zodiac Symbol is 'the Fishes'")    
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex13
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex14
 
 '''
 write a program to print following pattern 
@@ -126,6 +265,223 @@ write a program to print following pattern
 
 '''
 count=1
-while count<=1000
+while count<=22:
     print(count*count*count,end=' ')
     count = count+1
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex15
+
+'''
+write a program to print following series (Lucas series)
+2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123 .... 300
+
+'''
+def lucas(n):
+
+    a=2
+    b=1
+
+    if (n==0):
+        return a
+    for i in range(2,n+1):
+        print(b, end = ' ')
+        c = a+b
+        a=b
+        b=c
+    return b
+n=15
+print(lucas(n))
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex16
+
+'''
+write a program to print following series (triangular numbers)
+0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ... 1000
+
+result=int(value*(value+1)/2)
+'''
+number=1
+
+while number <46:
+    answer= int(number*(number+1)/2)
+    print(answer,end=' ')
+    number=number+1
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex17
+
+'''
+write a program to print following series (pentagonal  number)
+1, 5, 12, 22, 35, 51, 70, 92, 117, 145, 176 ... 3000
+(3n*n-n)/2
+'''
+number=1
+
+while number <15:
+    answer= int((3*number*number-number)/2)
+    print(answer,end=' ')
+    number=number+1
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex18
+
+'''
+write a program to print following series (hexagonal number)
+1, 6, 15, 28, 45, 66, 91, 120, 153, 190, 231 .. 1000
+n.(2n-1)
+'''
+
+number=1
+
+while number <46:
+    answer= int(number*(2*number-1))
+    print(answer,end=' ')
+    number=number+1
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex19
+
+#write a program to findout power of given number using given exponent 
+
+
+count=1
+base=int(input("enter a base"))
+exponent=int(input("enter a exponent"))
+power=base
+while count<8:
+    count=count+1
+    power*=base
+print(power,end="")
+ 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex22
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex21
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex22
+'''
+*
+* *
+* * *
+* * * *
+* * * * * 
+* * * * * *
+
+'''
+row=1
+while row<=6:
+    column=1
+    while column<=row:
+        print("*",end=' ')
+        column=column+1
+    print('')
+    row=row+1
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex23
+'''
+* * * * * *
+* * * * * 
+* * * *
+* * *
+* *
+*
+
+'''
+row=6
+while row>=1:
+    column=1
+    while column<=row:
+        print("*",end=' ')
+        column=column+1
+    print('')
+    row=row-1
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex24
+'''
+write  a program to print Hollow inverted pyramid (half pyramid)
+
+'''
+
+row=6
+while row>=1:
+    column=1
+    while column<=row:
+        if row==6 or row==2 or row==1:
+            print("* ",end='')
+        elif column>=2 and column<row:
+            print(" ",end=" ")
+        else:
+            print("*",end=" ")
+        column=column+1
+    print('')
+    row=row-1
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex25
+'''
+        *
+       * *
+      * * *
+     * * * *
+    * * * * *    
+
+     '''
+for row in range(5):
+    for i in range(5-row-1):
+       print(' ',end = ' ')
+    for j in range (row + 1):
+        print(" *",end="  ")
+
+    print(' ')
+
+for row in range(5):
+    for i in range(5-row-1):
+       print(' ',end = ' ')
+    for j in range (2*row + 1):
+        print(" *",end="")
+
+    print(' ')
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex26
+'''
+    * * * * *    
+     * * * *
+      * * *
+       * *
+        *
+
+'''
+
+for row in range (6):
+    for sapace in range(row):
+        print(" ",end ="")
+    for astrik in range(6-row):
+        print ("*",end = " ")
+    print()
+
+for row in range (6):
+    for sapace in range(row):
+        print(" ",end ="")
+    for astrik in range(2*(6-row)-1):
+        print ("*",end = "")
+    print()
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ex27
+'''
+        *
+       * *
+      * * *
+     * * * *
+    * * * * *    
+
+     '''
+for row in range(5):
+    for i in range(5-row-1):
+       print(' ',end = ' ')
+    for j in range (row + 1):
+        print(" *",end="  ")
+
+    print(' ')
+
